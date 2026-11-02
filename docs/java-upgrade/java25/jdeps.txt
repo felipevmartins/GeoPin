@@ -1,0 +1,13 @@
+spring-core-7.0.10.jar -> jdk.unsupported
+   org.springframework.objenesis.instantiator.sun.UnsafeFactoryInstantiator -> sun.misc.Unsafe                                    JDK internal API (jdk.unsupported)
+   org.springframework.objenesis.instantiator.util.UnsafeUtils -> sun.misc.Unsafe                                    JDK internal API (jdk.unsupported)
+
+Warning: JDK internal APIs are unsupported and private to JDK implementation that are
+subject to be removed or changed incompatibly and could break your application.
+Please modify your code to eliminate dependence on any JDK internal APIs.
+For the most recent update on JDK internal API replacements, please check:
+https://wiki.openjdk.org/display/JDK8/Java+Dependency+Analysis+Tool
+
+JDK Internal API                         Suggested Replacement
+----------------                         ---------------------
+sun.misc.Unsafe                          See https://openjdk.org/jeps/260

@@ -1,0 +1,2 @@
+dockerfile: Dockerfile -> maven:3.9.11-eclipse-temurin-21, tomcat:9.0-jdk21-temurin
+javax.* (namespace) -> jakarta.* per module and package (never global) (5 arquivos): src/main/java/br/com/trixlog/model/BaseModel.java, src/main/java/br/com/trixlog/model/Location.java, src/main/java/br/com/trixlog/model/Tag.java

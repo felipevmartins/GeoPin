@@ -1,0 +1,1 @@
+PASS: schema unchanged (dump headers and random restrict tokens ignored).

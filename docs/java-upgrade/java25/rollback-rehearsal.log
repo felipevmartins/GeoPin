@@ -1,0 +1,35 @@
+ Container trixlog-java25-db-1 Running 
+ Container trixlog-java25-app-1 Recreate 
+ Container trixlog-java25-app-1 Recreated 
+ Container trixlog-java25-db-1 Waiting 
+ Container trixlog-java25-db-1 Healthy 
+ Container trixlog-java25-app-1 Starting 
+ Container trixlog-java25-app-1 Started 
+ Container trixlog-java25-app-1 Waiting 
+ Container trixlog-java25-db-1 Waiting 
+ Container trixlog-java25-db-1 Healthy 
+ Container trixlog-java25-app-1 Healthy 
+Runtime: openjdk version "21.0.13" 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)
+OpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode, sharing)
+
+PASS: JSP, location create/read/update/delete, tag association, JSON, UTF-8 and database persistence
+PASS: old and new records/tags/JSON readable, CRUD on trixlog-test-app:java21-before-java25
+ Container trixlog-java25-db-1 Running 
+ Container trixlog-java25-app-1 Recreate 
+ Container trixlog-java25-app-1 Recreated 
+ Container trixlog-java25-db-1 Waiting 
+ Container trixlog-java25-db-1 Healthy 
+ Container trixlog-java25-app-1 Starting 
+ Container trixlog-java25-app-1 Started 
+ Container trixlog-java25-app-1 Waiting 
+ Container trixlog-java25-db-1 Waiting 
+ Container trixlog-java25-db-1 Healthy 
+ Container trixlog-java25-app-1 Healthy 
+Runtime: openjdk version "25.0.5" 2026-10-20 LTS
+OpenJDK Runtime Environment Temurin-25.0.5+8 (build 25.0.5+8-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.5+8 (build 25.0.5+8-LTS, mixed mode, sharing)
+
+PASS: JSP, location create/read/update/delete, tag association, JSON, UTF-8 and database persistence
+PASS: old and new records/tags/JSON readable, CRUD on trixlog-java25-app:validated
+PASS: restored Java21 dump, Java25 -> Java21 -> Java25 without data loss in exercised records

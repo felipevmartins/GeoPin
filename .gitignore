@@ -1,0 +1,15 @@
+target
+.classpath
+.project
+.settings
+.gradle
+bin
+build
+target-eclipse
+h2db
+.springBeans
+
+.env
+
+# Local IDE settings
+.idea/

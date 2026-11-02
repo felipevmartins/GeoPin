@@ -1,0 +1,112 @@
+ D trixlog-spring/.gitignore
+ D trixlog-spring/pom.xml
+ D trixlog-spring/src/main/java/br/com/trixlog/dao/GenericDao.java
+ D trixlog-spring/src/main/java/br/com/trixlog/dao/LocationDao.java
+ D trixlog-spring/src/main/java/br/com/trixlog/dao/TagDao.java
+ D trixlog-spring/src/main/java/br/com/trixlog/model/BaseModel.java
+ D trixlog-spring/src/main/java/br/com/trixlog/model/Location.java
+ D trixlog-spring/src/main/java/br/com/trixlog/model/Tag.java
+ D trixlog-spring/src/main/java/br/com/trixlog/service/GenercService.java
+ D trixlog-spring/src/main/java/br/com/trixlog/service/LocationService.java
+ D trixlog-spring/src/main/java/br/com/trixlog/service/TagService.java
+ D trixlog-spring/src/main/java/br/com/trixlog/web/LocationController.java
+ D trixlog-spring/src/main/java/br/com/trixlog/web/TagController.java
+ D trixlog-spring/src/main/resources/config.properties
+ D trixlog-spring/src/main/resources/hibernate.cfg.xml
+ D trixlog-spring/src/main/resources/logback.xml
+ D trixlog-spring/src/main/resources/spring/app-config.xml
+ D trixlog-spring/src/main/resources/spring/persistence-config.xml
+ D trixlog-spring/src/main/webapp/META-INF/MANIFEST.MF
+ D trixlog-spring/src/main/webapp/WEB-INF/applicationContext.xml
+ D trixlog-spring/src/main/webapp/WEB-INF/spring-mvc-servlet.xml
+ D trixlog-spring/src/main/webapp/WEB-INF/views/home.jsp
+ D trixlog-spring/src/main/webapp/WEB-INF/views/location/deletar.jsp
+ D trixlog-spring/src/main/webapp/WEB-INF/views/location/editar.jsp
+ D trixlog-spring/src/main/webapp/WEB-INF/views/location/listar.jsp
+ D trixlog-spring/src/main/webapp/WEB-INF/views/location/novo.jsp
+ D trixlog-spring/src/main/webapp/WEB-INF/views/tag/novo.jsp
+ D trixlog-spring/src/main/webapp/WEB-INF/web.xml
+ D trixlog-spring/src/main/webapp/scripts/bootstrap-select.js
+ D trixlog-spring/src/main/webapp/scripts/bootstrap.js
+ D trixlog-spring/src/main/webapp/scripts/bootstrap.min.js
+ D trixlog-spring/src/main/webapp/scripts/custom.js
+ D trixlog-spring/src/main/webapp/scripts/jquery-2.1.1.js
+ D trixlog-spring/src/main/webapp/scripts/jquery.maskedinput.js
+ D trixlog-spring/src/main/webapp/scripts/mapa.js
+ D trixlog-spring/src/main/webapp/styles/bootstrap-theme.css
+ D trixlog-spring/src/main/webapp/styles/bootstrap-theme.min.css
+ D trixlog-spring/src/main/webapp/styles/bootstrap.css
+ D trixlog-spring/src/main/webapp/styles/bootstrap.min.css
+ D trixlog-spring/src/main/webapp/styles/custom.css
+ D trixlog-spring/src/main/webapp/styles/mapa.css
+?? .dockerignore
+?? .env.example
+?? .gitignore
+?? .idea/.gitignore
+?? .idea/compiler.xml
+?? .idea/encodings.xml
+?? .idea/jarRepositories.xml
+?? .idea/misc.xml
+?? .idea/vcs.xml
+?? Dockerfile
+?? compose.yaml
+?? docs/docker/browser-css.log
+?? docs/docker/browser-maps.log
+?? docs/docker/browser-ui.log
+?? docs/docker/google-maps.md
+?? docs/docker/smoke.log
+?? docs/docker/validation.md
+?? docs/java-upgrade/README.md
+?? docs/java-upgrade/baseline-java8.log
+?? docs/java-upgrade/diagnosis-java21.log
+?? docs/java-upgrade/package-java21.log
+?? docs/java-upgrade/pom-before-java21.xml
+?? docs/java-upgrade/verify-java21.log
+?? ops/docker/README.md
+?? ops/docker/browser-css.cjs
+?? ops/docker/browser-maps.cjs
+?? ops/docker/browser-ui.cjs
+?? ops/docker/smoke.py
+?? pom.xml
+?? src/main/java/br/com/trixlog/dao/GenericDao.java
+?? src/main/java/br/com/trixlog/dao/LocationDao.java
+?? src/main/java/br/com/trixlog/dao/TagDao.java
+?? src/main/java/br/com/trixlog/model/BaseModel.java
+?? src/main/java/br/com/trixlog/model/Location.java
+?? src/main/java/br/com/trixlog/model/Tag.java
+?? src/main/java/br/com/trixlog/service/GenercService.java
+?? src/main/java/br/com/trixlog/service/LocationService.java
+?? src/main/java/br/com/trixlog/service/TagService.java
+?? src/main/java/br/com/trixlog/web/LocationController.java
+?? src/main/java/br/com/trixlog/web/MapsConfiguration.java
+?? src/main/java/br/com/trixlog/web/TagController.java
+?? src/main/resources/config.properties
+?? src/main/resources/hibernate.cfg.xml
+?? src/main/resources/logback.xml
+?? src/main/resources/spring/app-config.xml
+?? src/main/resources/spring/persistence-config.xml
+?? src/main/webapp/META-INF/MANIFEST.MF
+?? src/main/webapp/WEB-INF/applicationContext.xml
+?? src/main/webapp/WEB-INF/spring-mvc-servlet.xml
+?? src/main/webapp/WEB-INF/views/home.jsp
+?? src/main/webapp/WEB-INF/views/location/deletar.jsp
+?? src/main/webapp/WEB-INF/views/location/editar.jsp
+?? src/main/webapp/WEB-INF/views/location/listar.jsp
+?? src/main/webapp/WEB-INF/views/location/novo.jsp
+?? src/main/webapp/WEB-INF/views/shared/footer.jspf
+?? src/main/webapp/WEB-INF/views/shared/header.jspf
+?? src/main/webapp/WEB-INF/views/tag/novo.jsp
+?? src/main/webapp/WEB-INF/web.xml
+?? src/main/webapp/scripts/bootstrap-select.js
+?? src/main/webapp/scripts/bootstrap.js
+?? src/main/webapp/scripts/bootstrap.min.js
+?? src/main/webapp/scripts/custom.js
+?? src/main/webapp/scripts/jquery-2.1.1.js
+?? src/main/webapp/scripts/jquery.maskedinput.js
+?? src/main/webapp/scripts/mapa.js
+?? src/main/webapp/styles/bootstrap-theme.css
+?? src/main/webapp/styles/bootstrap-theme.min.css
+?? src/main/webapp/styles/bootstrap.css
+?? src/main/webapp/styles/bootstrap.min.css
+?? src/main/webapp/styles/custom.css
+?? src/main/webapp/styles/mapa.css

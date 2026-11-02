@@ -1,0 +1,45 @@
+[INFO] Scanning for projects...
+[INFO] Loaded 24324 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] -----------------------< br.com.trixlog:trixlog >-----------------------
+[INFO] Building trixlog 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ trixlog ---
+[INFO] Deleting /mnt/d/repositorys/Trixlog-Spring/target
+[INFO] 
+[INFO] --- enforcer:3.7.0:enforce (supported-build-environment) @ trixlog ---
+[INFO] Rule 0: org.apache.maven.enforcer.rules.version.RequireJavaVersion passed
+[INFO] Rule 1: org.apache.maven.enforcer.rules.version.RequireMavenVersion passed
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ trixlog ---
+[INFO] Copying 4 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.16.0:compile (default-compile) @ trixlog ---
+[INFO] Loaded 70 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 13 source files with javac [debug parameters release 25] to target/classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ trixlog ---
+[INFO] skip non existing resourceDirectory /mnt/d/repositorys/Trixlog-Spring/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.16.0:testCompile (default-testCompile) @ trixlog ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 25] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.6.1:test (default-test) @ trixlog ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- war:3.5.1:war (default-war) @ trixlog ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [trixlog] in [/mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/mnt/d/repositorys/Trixlog-Spring/src/main/webapp]
+[INFO] Building war: /mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0.war
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17.163 s
+[INFO] Finished at: 2026-11-02T01:16:32-03:00
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,1147 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.trixlog:trixlog >-----------------------
+[INFO] Building trixlog 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] Loaded 24324 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] Loaded 70 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.18.1-GA during dependency collection step for project (use -X to see details)
+[WARNING] Could not transfer metadata /.meta/prefixes.txt from/to jvnet-nexus-releases (https://maven.java.net/content/repositories/releases/): (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ trixlog ---
+[INFO] Deleting /mnt/d/repositorys/Trixlog-Spring/target
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ trixlog ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 12 source files with javac [debug release 21] to target/classes
+[INFO] /mnt/d/repositorys/Trixlog-Spring/src/main/java/br/com/trixlog/dao/TagDao.java: /mnt/d/repositorys/Trixlog-Spring/src/main/java/br/com/trixlog/dao/TagDao.java uses unchecked or unsafe operations.
+[INFO] /mnt/d/repositorys/Trixlog-Spring/src/main/java/br/com/trixlog/dao/TagDao.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/d/repositorys/Trixlog-Spring/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ trixlog ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.15:test (default-test) @ trixlog ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.5.1:war (default-war) @ trixlog ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [trixlog] in [/mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/mnt/d/repositorys/Trixlog-Spring/src/main/webapp]
+[INFO] Building war: /mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0.war
+[INFO] 
+[INFO] >>> jetty:6.1.26:run (start-jetty) > test-compile @ trixlog >>>
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ trixlog ---
+[INFO] Nothing to compile - all classes are up to date.
+[WARNING] Overwriting artifact's file from /mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0.war to /mnt/d/repositorys/Trixlog-Spring/target/classes
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/d/repositorys/Trixlog-Spring/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ trixlog ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< jetty:6.1.26:run (start-jetty) < test-compile @ trixlog <<<
+[INFO] 
+[INFO] 
+[INFO] --- jetty:6.1.26:run (start-jetty) @ trixlog ---
+[WARNING] Ignoring checksum policy 'ignore' contributed by repository apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository) declared by a remote artifact descriptor: it would downgrade the checksum policy 'warn' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[WARNING] Ignoring checksum policy 'ignore' contributed by repository codehaus-snapshots (http://snapshots.repository.codehaus.org) declared by a remote artifact descriptor: it would downgrade the checksum policy 'warn' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[INFO] Configuring Jetty for project: trixlog
+[INFO] Webapp source directory = /mnt/d/repositorys/Trixlog-Spring/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = /mnt/d/repositorys/Trixlog-Spring/target/classes
+[INFO] Logging to org.slf4j.simple.MavenSimpleLogger@1c8e8fed via org.mortbay.log.Slf4jLog
+[INFO] Context path = /trixlog
+[INFO] Tmp directory =  determined at runtime
+[INFO] Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = /mnt/d/repositorys/Trixlog-Spring/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = /mnt/d/repositorys/Trixlog-Spring/src/main/webapp
+[INFO] Starting jetty 6.1.26 ...
+[INFO] jetty-6.1.26
+[INFO] Annotations are not supported on jvms prior to jdk1.5
+[INFO] No Transaction manager found - if your webapp requires one, please configure one.
+[INFO] Initializing Spring root WebApplicationContext
+01:06:14.737 [main] WARN  o.h.e.jdbc.internal.JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : The connection attempt failed.
+01:06:16.350 [main] ERROR o.h.p.p.j.JavassistLazyInitializer - HHH000142: Javassist Enhancement failed: br.com.trixlog.model.Location
+java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:353) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:329) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:277) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:182) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:176) ~[na:na]
+	at javassist.util.proxy.SecurityActions.setAccessible(SecurityActions.java:103) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass2(FactoryHelper.java:181) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:164) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:507) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:492) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass1(ProxyFactory.java:428) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:400) ~[javassist-3.18.1-GA.jar:na]
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:162) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:67) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:224) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:212) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:80) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructDefaultTuplizer(EntityTuplizerFactory.java:188) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:403) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:520) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:148) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.create(PersisterFactoryImpl.java:163) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:400) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+01:06:16.391 [main] WARN  o.h.tuple.entity.PojoEntityTuplizer - HHH000305: Could not create proxy factory for:br.com.trixlog.model.Location
+org.hibernate.HibernateException: HHH000142: Javassist Enhancement failed: br.com.trixlog.model.Location
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:166) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:67) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:224) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:212) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:80) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructDefaultTuplizer(EntityTuplizerFactory.java:188) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:403) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:520) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:148) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.create(PersisterFactoryImpl.java:163) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:400) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:353) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:329) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:277) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:182) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:176) ~[na:na]
+	at javassist.util.proxy.SecurityActions.setAccessible(SecurityActions.java:103) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass2(FactoryHelper.java:181) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:164) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:507) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:492) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass1(ProxyFactory.java:428) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:400) ~[javassist-3.18.1-GA.jar:na]
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:162) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	... 95 common frames omitted
+01:06:16.473 [main] ERROR o.h.p.p.j.JavassistLazyInitializer - HHH000142: Javassist Enhancement failed: br.com.trixlog.model.Tag
+java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:353) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:329) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:277) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:182) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:176) ~[na:na]
+	at javassist.util.proxy.SecurityActions.setAccessible(SecurityActions.java:103) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass2(FactoryHelper.java:181) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:164) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:507) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:492) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass1(ProxyFactory.java:428) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:400) ~[javassist-3.18.1-GA.jar:na]
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:162) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:67) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:224) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:212) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:80) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructDefaultTuplizer(EntityTuplizerFactory.java:188) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:403) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:520) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:148) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.create(PersisterFactoryImpl.java:163) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:400) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+01:06:16.515 [main] WARN  o.h.tuple.entity.PojoEntityTuplizer - HHH000305: Could not create proxy factory for:br.com.trixlog.model.Tag
+org.hibernate.HibernateException: HHH000142: Javassist Enhancement failed: br.com.trixlog.model.Tag
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:166) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.proxy.pojo.javassist.JavassistProxyFactory.postInstantiate(JavassistProxyFactory.java:67) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.buildProxyFactory(PojoEntityTuplizer.java:224) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.AbstractEntityTuplizer.<init>(AbstractEntityTuplizer.java:212) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.PojoEntityTuplizer.<init>(PojoEntityTuplizer.java:80) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructTuplizer(EntityTuplizerFactory.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityTuplizerFactory.constructDefaultTuplizer(EntityTuplizerFactory.java:188) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tuple.entity.EntityMetamodel.<init>(EntityMetamodel.java:403) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.<init>(AbstractEntityPersister.java:520) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.entity.SingleTableEntityPersister.<init>(SingleTableEntityPersister.java:148) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483) ~[na:na]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.create(PersisterFactoryImpl.java:163) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.persister.internal.PersisterFactoryImpl.createEntityPersister(PersisterFactoryImpl.java:135) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:400) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:353) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:329) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:277) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:182) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:176) ~[na:na]
+	at javassist.util.proxy.SecurityActions.setAccessible(SecurityActions.java:103) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass2(FactoryHelper.java:181) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.FactoryHelper.toClass(FactoryHelper.java:164) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass3(ProxyFactory.java:507) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass2(ProxyFactory.java:492) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass1(ProxyFactory.java:428) ~[javassist-3.18.1-GA.jar:na]
+	at javassist.util.proxy.ProxyFactory.createClass(ProxyFactory.java:400) ~[javassist-3.18.1-GA.jar:na]
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.getProxyFactory(JavassistLazyInitializer.java:162) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	... 95 common frames omitted
+01:06:26.890 [main] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000319: Could not get database metadata
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.8.jar:42.7.8]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:160) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:521) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:307) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.8.jar:42.7.8]
+	... 92 common frames omitted
+01:06:26.932 [main] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000299: Could not complete schema update
+org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:385) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:57) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:279) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.makeConnection(Driver.java:448) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.Driver.connect(Driver.java:298) ~[postgresql-42.7.8.jar:42.7.8]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:613) ~[java.sql:na]
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:160) ~[java.sql:na]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:153) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:144) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:155) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:120) ~[spring-jdbc-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:139) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:194) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:178) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:521) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1857) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1928) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBuilder.buildSessionFactory(LocalSessionFactoryBuilder.java:343) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.buildSessionFactory(LocalSessionFactoryBean.java:431) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:416) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1014) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:957) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:855) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:480) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:289) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:547) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:594) ~[na:na]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:307) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:659) ~[na:na]
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:261) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.PGStream.<init>(PGStream.java:122) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146) ~[postgresql-42.7.8.jar:42.7.8]
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:289) ~[postgresql-42.7.8.jar:42.7.8]
+	... 92 common frames omitted
+01:06:27.181 [main] ERROR o.s.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationService' defined in file [/mnt/d/repositorys/Trixlog-Spring/target/classes/br/com/trixlog/service/LocationService.class]: Initialization of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:547) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:700) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) ~[jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) ~[jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) ~[maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) ~[na:na]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) ~[na:na]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) ~[na:na]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) ~[na:na]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) ~[na:na]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) ~[na:na]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) ~[na:na]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) ~[na:na]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) ~[na:na]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) ~[na:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) ~[na:na]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) ~[na:na]
+Caused by: java.lang.ExceptionInInitializerError: null
+	at org.springframework.cglib.core.KeyFactory$Generator.generateClass(KeyFactory.java:166) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:216) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.core.KeyFactory$Generator.create(KeyFactory.java:144) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:116) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:108) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.core.KeyFactory.create(KeyFactory.java:104) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.cglib.proxy.Enhancer.<clinit>(Enhancer.java:69) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy.createEnhancer(CglibAopProxy.java:234) ~[spring-aop-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy.getProxy(CglibAopProxy.java:177) ~[spring-aop-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.aop.framework.ProxyFactory.getProxy(ProxyFactory.java:111) ~[spring-aop-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy(AbstractAutoProxyCreator.java:490) ~[spring-aop-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:375) ~[spring-aop-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:335) ~[spring-aop-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:421) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1558) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	... 56 common frames omitted
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+	at java.base/java.lang.reflect.AccessibleObject.throwInaccessibleObjectException(AccessibleObject.java:353) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:329) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:277) ~[na:na]
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:182) ~[na:na]
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:176) ~[na:na]
+	at org.springframework.cglib.core.ReflectUtils$2.run(ReflectUtils.java:56) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:74) ~[na:na]
+	at org.springframework.cglib.core.ReflectUtils.<clinit>(ReflectUtils.java:46) ~[spring-core-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	... 73 common frames omitted
+[ERROR] Failed startup of context org.mortbay.jetty.plugin.Jetty6PluginWebAppContext@ace2408{/trixlog,/mnt/d/repositorys/Trixlog-Spring/src/main/webapp}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationService' defined in file [/mnt/d/repositorys/Trixlog-Spring/target/classes/br/com/trixlog/service/LocationService.class]: Initialization of bean failed; nested exception is java.lang.ExceptionInInitializerError
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:547)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:700)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: java.lang.ExceptionInInitializerError
+    at org.springframework.cglib.core.KeyFactory$Generator.generateClass (KeyFactory.java:166)
+    at org.springframework.cglib.core.DefaultGeneratorStrategy.generate (DefaultGeneratorStrategy.java:25)
+    at org.springframework.cglib.core.AbstractClassGenerator.create (AbstractClassGenerator.java:216)
+    at org.springframework.cglib.core.KeyFactory$Generator.create (KeyFactory.java:144)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:116)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:108)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:104)
+    at org.springframework.cglib.proxy.Enhancer.<clinit> (Enhancer.java:69)
+    at org.springframework.aop.framework.CglibAopProxy.createEnhancer (CglibAopProxy.java:234)
+    at org.springframework.aop.framework.CglibAopProxy.getProxy (CglibAopProxy.java:177)
+    at org.springframework.aop.framework.ProxyFactory.getProxy (ProxyFactory.java:111)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy (AbstractAutoProxyCreator.java:490)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary (AbstractAutoProxyCreator.java:375)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization (AbstractAutoProxyCreator.java:335)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization (AbstractAutowireCapableBeanFactory.java:421)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1558)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:700)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+    at java.lang.reflect.AccessibleObject.throwInaccessibleObjectException (AccessibleObject.java:353)
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:329)
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:277)
+    at java.lang.reflect.Method.checkCanSetAccessible (Method.java:182)
+    at java.lang.reflect.Method.setAccessible (Method.java:176)
+    at org.springframework.cglib.core.ReflectUtils$2.run (ReflectUtils.java:56)
+    at java.security.AccessController.doPrivileged (AccessController.java:74)
+    at org.springframework.cglib.core.ReflectUtils.<clinit> (ReflectUtils.java:46)
+    at org.springframework.cglib.core.KeyFactory$Generator.generateClass (KeyFactory.java:166)
+    at org.springframework.cglib.core.DefaultGeneratorStrategy.generate (DefaultGeneratorStrategy.java:25)
+    at org.springframework.cglib.core.AbstractClassGenerator.create (AbstractClassGenerator.java:216)
+    at org.springframework.cglib.core.KeyFactory$Generator.create (KeyFactory.java:144)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:116)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:108)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:104)
+    at org.springframework.cglib.proxy.Enhancer.<clinit> (Enhancer.java:69)
+    at org.springframework.aop.framework.CglibAopProxy.createEnhancer (CglibAopProxy.java:234)
+    at org.springframework.aop.framework.CglibAopProxy.getProxy (CglibAopProxy.java:177)
+    at org.springframework.aop.framework.ProxyFactory.getProxy (ProxyFactory.java:111)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy (AbstractAutoProxyCreator.java:490)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary (AbstractAutoProxyCreator.java:375)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization (AbstractAutoProxyCreator.java:335)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization (AbstractAutowireCapableBeanFactory.java:421)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1558)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:700)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[ERROR] Nested in org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'locationService' defined in file [/mnt/d/repositorys/Trixlog-Spring/target/classes/br/com/trixlog/service/LocationService.class]: Initialization of bean failed; nested exception is java.lang.ExceptionInInitializerError:
+java.lang.reflect.InaccessibleObjectException: Unable to make protected final java.lang.Class java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain) throws java.lang.ClassFormatError accessible: module java.base does not "opens java.lang" to unnamed module @17dbca0a
+    at java.lang.reflect.AccessibleObject.throwInaccessibleObjectException (AccessibleObject.java:353)
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:329)
+    at java.lang.reflect.AccessibleObject.checkCanSetAccessible (AccessibleObject.java:277)
+    at java.lang.reflect.Method.checkCanSetAccessible (Method.java:182)
+    at java.lang.reflect.Method.setAccessible (Method.java:176)
+    at org.springframework.cglib.core.ReflectUtils$2.run (ReflectUtils.java:56)
+    at java.security.AccessController.doPrivileged (AccessController.java:74)
+    at org.springframework.cglib.core.ReflectUtils.<clinit> (ReflectUtils.java:46)
+    at org.springframework.cglib.core.KeyFactory$Generator.generateClass (KeyFactory.java:166)
+    at org.springframework.cglib.core.DefaultGeneratorStrategy.generate (DefaultGeneratorStrategy.java:25)
+    at org.springframework.cglib.core.AbstractClassGenerator.create (AbstractClassGenerator.java:216)
+    at org.springframework.cglib.core.KeyFactory$Generator.create (KeyFactory.java:144)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:116)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:108)
+    at org.springframework.cglib.core.KeyFactory.create (KeyFactory.java:104)
+    at org.springframework.cglib.proxy.Enhancer.<clinit> (Enhancer.java:69)
+    at org.springframework.aop.framework.CglibAopProxy.createEnhancer (CglibAopProxy.java:234)
+    at org.springframework.aop.framework.CglibAopProxy.getProxy (CglibAopProxy.java:177)
+    at org.springframework.aop.framework.ProxyFactory.getProxy (ProxyFactory.java:111)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy (AbstractAutoProxyCreator.java:490)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary (AbstractAutoProxyCreator.java:375)
+    at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization (AbstractAutoProxyCreator.java:335)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization (AbstractAutowireCapableBeanFactory.java:421)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1558)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:700)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at jdk.internal.reflect.DirectMethodHandleAccessor.invoke (DirectMethodHandleAccessor.java:104)
+    at java.lang.reflect.Method.invoke (Method.java:565)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[INFO] Started SelectChannelConnector@0.0.0.0:8080
+[INFO] Started Jetty Server
+[INFO] 
+[INFO] --- surefire:2.15:test (selenium) @ trixlog ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jetty:6.1.26:stop (stop-jetty) @ trixlog ---
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  40.103 s
+[INFO] Finished at: 2026-11-02T01:06:27-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.mortbay.jetty:maven-jetty-plugin:6.1.26:stop (stop-jetty) on project trixlog: The parameters 'stopKey', 'stopPort' for goal org.mortbay.jetty:maven-jetty-plugin:6.1.26:stop are missing or invalid -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginParameterException
+[INFO] Shutdown hook executing
+[INFO] Stopped SelectChannelConnector@0.0.0.0:8080
+[INFO] Closing Spring root WebApplicationContext
+[INFO] Shutdown hook complete
