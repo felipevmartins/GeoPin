@@ -1,0 +1,486 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< br.com.trixlog:trixlog >-----------------------
+[INFO] Building trixlog 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] Loaded 24324 auto-discovered prefixes for remote repository central (prefixes-central.txt)
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ trixlog ---
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:2.5:compile (default-compile) @ trixlog ---
+[INFO] Compiling 11 source files to /mnt/d/repositorys/Trixlog-Spring/target/classes
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/d/repositorys/Trixlog-Spring/src/test/resources
+[INFO] 
+[INFO] --- compiler:2.5:testCompile (default-testCompile) @ trixlog ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:2.15:test (default-test) @ trixlog ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- war:3.5.1:war (default-war) @ trixlog ---
+[INFO] Loaded 70 auto-discovered prefixes for remote repository apache.snapshots (prefixes-apache.snapshots.txt)
+[INFO] Packaging webapp
+[INFO] Assembling webapp [trixlog] in [/mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0]
+[INFO] Processing war project
+[INFO] Copying webapp resources [/mnt/d/repositorys/Trixlog-Spring/src/main/webapp]
+[INFO] Building war: /mnt/d/repositorys/Trixlog-Spring/target/trixlog-1.0.0.war
+[INFO] 
+[INFO] >>> jetty:6.1.26:run (start-jetty) > test-compile @ trixlog >>>
+[INFO] 
+[INFO] --- resources:2.6:resources (default-resources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] 
+[INFO] --- compiler:2.5:compile (default-compile) @ trixlog ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:2.6:testResources (default-testResources) @ trixlog ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /mnt/d/repositorys/Trixlog-Spring/src/test/resources
+[INFO] 
+[INFO] --- compiler:2.5:testCompile (default-testCompile) @ trixlog ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< jetty:6.1.26:run (start-jetty) < test-compile @ trixlog <<<
+[INFO] 
+[INFO] 
+[INFO] --- jetty:6.1.26:run (start-jetty) @ trixlog ---
+[WARNING] Ignoring checksum policy 'ignore' contributed by repository apache-snapshots (http://people.apache.org/repo/m2-snapshot-repository) declared by a remote artifact descriptor: it would downgrade the checksum policy 'warn' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[WARNING] Ignoring checksum policy 'ignore' contributed by repository codehaus-snapshots (http://snapshots.repository.codehaus.org) declared by a remote artifact descriptor: it would downgrade the checksum policy 'warn' of the mirror serving it; set aether.remoteRepositoryManager.rawRepositoryChecksumPolicyDowngrade=true to restore the legacy weakest-wins merge
+[INFO] Configuring Jetty for project: trixlog
+[INFO] Webapp source directory = /mnt/d/repositorys/Trixlog-Spring/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] Classes = /mnt/d/repositorys/Trixlog-Spring/target/classes
+[INFO] Logging to org.slf4j.simple.MavenSimpleLogger@6403a4a5 via org.mortbay.log.Slf4jLog
+[INFO] Context path = /trixlog
+[INFO] Tmp directory =  determined at runtime
+[INFO] Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] web.xml file = /mnt/d/repositorys/Trixlog-Spring/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = /mnt/d/repositorys/Trixlog-Spring/src/main/webapp
+[INFO] Starting jetty 6.1.26 ...
+[INFO] jetty-6.1.26
+[INFO] No Transaction manager found - if your webapp requires one, please configure one.
+[INFO] Initializing Spring root WebApplicationContext
+00:39:45.581 [main] ERROR o.s.web.context.ContextLoader - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mySessionFactory' defined in class path resource [spring/persistence-config.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: invalid configuration
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1553) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:539) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:475) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:304) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:300) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:195) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:681) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:760) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482) ~[spring-context-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:403) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306) ~[spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:106) [spring-web-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.mortbay.jetty.handler.ContextHandler.startContext(ContextHandler.java:549) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.servlet.Context.startContext(Context.java:136) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1282) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandler.doStart(ContextHandler.java:518) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.webapp.WebAppContext.doStart(WebAppContext.java:499) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart(Jetty6PluginWebAppContext.java:115) [maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) [jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.ContextHandlerCollection.doStart(ContextHandlerCollection.java:156) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) [jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerCollection.doStart(HandlerCollection.java:152) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) [jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.handler.HandlerWrapper.doStart(HandlerWrapper.java:130) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.Server.doStart(Server.java:224) [jetty-6.1.26.jar:6.1.26]
+	at org.mortbay.component.AbstractLifeCycle.start(AbstractLifeCycle.java:50) [jetty-util-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6PluginServer.start(Jetty6PluginServer.java:132) [maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:454) [maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:396) [maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute(AbstractJettyRunMojo.java:210) [maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.mortbay.jetty.plugin.Jetty6RunMojo.execute(Jetty6RunMojo.java:184) [maven-jetty-plugin-6.1.26.jar:6.1.26]
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:127) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2(MojoExecutor.java:336) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute(MojoExecutor.java:324) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:220) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:181) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.access$000(MojoExecutor.java:79) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor$1.run(MojoExecutor.java:169) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute(DefaultMojosExecutionStrategy.java:39) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:166) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:106) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:74) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:121) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:267) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:179) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105) [maven-core-3.10.0.jar:3.10.0]
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:1017) [maven-embedder-3.10.0.jar:3.10.0]
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:299) [maven-embedder-3.10.0.jar:3.10.0]
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:219) [maven-embedder-3.10.0.jar:3.10.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_504]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_504]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_504]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_504]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:255) [plexus-classworlds-2.12.1.jar:2.12.1]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:201) [plexus-classworlds-2.12.1.jar:2.12.1]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:362) [plexus-classworlds-2.12.1.jar:2.12.1]
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:314) [plexus-classworlds-2.12.1.jar:2.12.1]
+Caused by: org.hibernate.MappingException: invalid configuration
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2158) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.hibernate.cfg.Configuration.configure(Configuration.java:2111) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet(LocalSessionFactoryBean.java:329) ~[spring-orm-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1612) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1549) ~[spring-beans-4.0.1.RELEASE.jar:4.0.1.RELEASE]
+	... 59 common frames omitted
+Caused by: org.xml.sax.SAXParseException: Element type "hibernate-configuration" must be declared.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:204) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:135) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:395) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:326) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:283) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement(XMLDTDValidator.java:1905) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement(XMLDTDValidator.java:741) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:374) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook(XMLNSDocumentScannerImpl.java:613) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:3131) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:851) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:601) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:112) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:504) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:841) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:770) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213) ~[na:1.8.0_504]
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:642) ~[na:1.8.0_504]
+	at org.dom4j.io.SAXReader.read(SAXReader.java:465) ~[dom4j-1.6.1.jar:1.6.1]
+	at org.hibernate.cfg.Configuration.doConfigure(Configuration.java:2155) ~[hibernate-core-4.3.1.Final.jar:4.3.1.Final]
+	... 63 common frames omitted
+[ERROR] Failed startup of context org.mortbay.jetty.plugin.Jetty6PluginWebAppContext@216372b7{/trixlog,/mnt/d/repositorys/Trixlog-Spring/src/main/webapp}
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mySessionFactory' defined in class path resource [spring/persistence-config.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: invalid configuration
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1553)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:681)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.hibernate.MappingException: invalid configuration
+    at org.hibernate.cfg.Configuration.doConfigure (Configuration.java:2158)
+    at org.hibernate.cfg.Configuration.configure (Configuration.java:2111)
+    at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet (LocalSessionFactoryBean.java:329)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods (AbstractAutowireCapableBeanFactory.java:1612)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1549)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:681)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+Caused by: org.xml.sax.SAXParseException: Element type "hibernate-configuration" must be declared.
+    at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException (ErrorHandlerWrapper.java:204)
+    at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error (ErrorHandlerWrapper.java:135)
+    at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError (XMLErrorReporter.java:395)
+    at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError (XMLErrorReporter.java:326)
+    at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError (XMLErrorReporter.java:283)
+    at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement (XMLDTDValidator.java:1905)
+    at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement (XMLDTDValidator.java:741)
+    at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement (XMLNSDocumentScannerImpl.java:374)
+    at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook (XMLNSDocumentScannerImpl.java:613)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next (XMLDocumentFragmentScannerImpl.java:3131)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next (XMLDocumentScannerImpl.java:851)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next (XMLDocumentScannerImpl.java:601)
+    at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next (XMLNSDocumentScannerImpl.java:112)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument (XMLDocumentFragmentScannerImpl.java:504)
+    at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse (XML11Configuration.java:841)
+    at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse (XML11Configuration.java:770)
+    at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse (XMLParser.java:141)
+    at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse (AbstractSAXParser.java:1213)
+    at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse (SAXParserImpl.java:642)
+    at org.dom4j.io.SAXReader.read (SAXReader.java:465)
+    at org.hibernate.cfg.Configuration.doConfigure (Configuration.java:2155)
+    at org.hibernate.cfg.Configuration.configure (Configuration.java:2111)
+    at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet (LocalSessionFactoryBean.java:329)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods (AbstractAutowireCapableBeanFactory.java:1612)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1549)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:681)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[WARNING] Nested in org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mySessionFactory' defined in class path resource [spring/persistence-config.xml]: Invocation of init method failed; nested exception is org.hibernate.MappingException: invalid configuration:
+org.xml.sax.SAXParseException: Element type "hibernate-configuration" must be declared.
+    at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException (ErrorHandlerWrapper.java:204)
+    at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error (ErrorHandlerWrapper.java:135)
+    at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError (XMLErrorReporter.java:395)
+    at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError (XMLErrorReporter.java:326)
+    at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError (XMLErrorReporter.java:283)
+    at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.handleStartElement (XMLDTDValidator.java:1905)
+    at com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator.startElement (XMLDTDValidator.java:741)
+    at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement (XMLNSDocumentScannerImpl.java:374)
+    at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl$NSContentDriver.scanRootElementHook (XMLNSDocumentScannerImpl.java:613)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next (XMLDocumentFragmentScannerImpl.java:3131)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next (XMLDocumentScannerImpl.java:851)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next (XMLDocumentScannerImpl.java:601)
+    at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next (XMLNSDocumentScannerImpl.java:112)
+    at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument (XMLDocumentFragmentScannerImpl.java:504)
+    at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse (XML11Configuration.java:841)
+    at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse (XML11Configuration.java:770)
+    at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse (XMLParser.java:141)
+    at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse (AbstractSAXParser.java:1213)
+    at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse (SAXParserImpl.java:642)
+    at org.dom4j.io.SAXReader.read (SAXReader.java:465)
+    at org.hibernate.cfg.Configuration.doConfigure (Configuration.java:2155)
+    at org.hibernate.cfg.Configuration.configure (Configuration.java:2111)
+    at org.springframework.orm.hibernate4.LocalSessionFactoryBean.afterPropertiesSet (LocalSessionFactoryBean.java:329)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods (AbstractAutowireCapableBeanFactory.java:1612)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean (AbstractAutowireCapableBeanFactory.java:1549)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean (AbstractAutowireCapableBeanFactory.java:539)
+    at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean (AbstractAutowireCapableBeanFactory.java:475)
+    at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject (AbstractBeanFactory.java:304)
+    at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton (DefaultSingletonBeanRegistry.java:228)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean (AbstractBeanFactory.java:300)
+    at org.springframework.beans.factory.support.AbstractBeanFactory.getBean (AbstractBeanFactory.java:195)
+    at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons (DefaultListableBeanFactory.java:681)
+    at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization (AbstractApplicationContext.java:760)
+    at org.springframework.context.support.AbstractApplicationContext.refresh (AbstractApplicationContext.java:482)
+    at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext (ContextLoader.java:403)
+    at org.springframework.web.context.ContextLoader.initWebApplicationContext (ContextLoader.java:306)
+    at org.springframework.web.context.ContextLoaderListener.contextInitialized (ContextLoaderListener.java:106)
+    at org.mortbay.jetty.handler.ContextHandler.startContext (ContextHandler.java:549)
+    at org.mortbay.jetty.servlet.Context.startContext (Context.java:136)
+    at org.mortbay.jetty.webapp.WebAppContext.startContext (WebAppContext.java:1282)
+    at org.mortbay.jetty.handler.ContextHandler.doStart (ContextHandler.java:518)
+    at org.mortbay.jetty.webapp.WebAppContext.doStart (WebAppContext.java:499)
+    at org.mortbay.jetty.plugin.Jetty6PluginWebAppContext.doStart (Jetty6PluginWebAppContext.java:115)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.jetty.handler.ContextHandlerCollection.doStart (ContextHandlerCollection.java:156)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerCollection.doStart (HandlerCollection.java:152)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.handler.HandlerWrapper.doStart (HandlerWrapper.java:130)
+    at org.mortbay.jetty.Server.doStart (Server.java:224)
+    at org.mortbay.component.AbstractLifeCycle.start (AbstractLifeCycle.java:50)
+    at org.mortbay.jetty.plugin.Jetty6PluginServer.start (Jetty6PluginServer.java:132)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.startJetty (AbstractJettyMojo.java:454)
+    at org.mortbay.jetty.plugin.AbstractJettyMojo.execute (AbstractJettyMojo.java:396)
+    at org.mortbay.jetty.plugin.AbstractJettyRunMojo.execute (AbstractJettyRunMojo.java:210)
+    at org.mortbay.jetty.plugin.Jetty6RunMojo.execute (Jetty6RunMojo.java:184)
+    at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo (DefaultBuildPluginManager.java:127)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute2 (MojoExecutor.java:336)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.doExecute (MojoExecutor.java:324)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:220)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:181)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.access$000 (MojoExecutor.java:79)
+    at org.apache.maven.lifecycle.internal.MojoExecutor$1.run (MojoExecutor.java:169)
+    at org.apache.maven.plugin.DefaultMojosExecutionStrategy.execute (DefaultMojosExecutionStrategy.java:39)
+    at org.apache.maven.lifecycle.internal.MojoExecutor.execute (MojoExecutor.java:166)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:106)
+    at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject (LifecycleModuleBuilder.java:74)
+    at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build (SingleThreadedBuilder.java:56)
+    at org.apache.maven.lifecycle.internal.LifecycleStarter.execute (LifecycleStarter.java:121)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:267)
+    at org.apache.maven.DefaultMaven.doExecute (DefaultMaven.java:179)
+    at org.apache.maven.DefaultMaven.execute (DefaultMaven.java:105)
+    at org.apache.maven.cli.MavenCli.execute (MavenCli.java:1017)
+    at org.apache.maven.cli.MavenCli.doMain (MavenCli.java:299)
+    at org.apache.maven.cli.MavenCli.main (MavenCli.java:219)
+    at sun.reflect.NativeMethodAccessorImpl.invoke0 (Native Method)
+    at sun.reflect.NativeMethodAccessorImpl.invoke (NativeMethodAccessorImpl.java:62)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke (DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke (Method.java:498)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced (Launcher.java:255)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.launch (Launcher.java:201)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode (Launcher.java:362)
+    at org.codehaus.plexus.classworlds.launcher.Launcher.main (Launcher.java:314)
+[INFO] Started SelectChannelConnector@0.0.0.0:8080
+[INFO] Started Jetty Server
+[INFO] 
+[INFO] --- surefire:2.15:test (selenium) @ trixlog ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- jetty:6.1.26:stop (stop-jetty) @ trixlog ---
+[INFO] ------------------------------------------------------------------------
+[ERROR] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  20.994 s
+[INFO] Finished at: 2026-11-02T00:39:45-03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.mortbay.jetty:maven-jetty-plugin:6.1.26:stop (stop-jetty) on project trixlog: The parameters 'stopKey', 'stopPort' for goal org.mortbay.jetty:maven-jetty-plugin:6.1.26:stop are missing or invalid -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginParameterException
+[INFO] Shutdown hook executing
+[INFO] Stopped SelectChannelConnector@0.0.0.0:8080
+[INFO] Closing Spring root WebApplicationContext
+[INFO] Shutdown hook complete

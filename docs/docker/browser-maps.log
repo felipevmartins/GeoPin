@@ -1,0 +1,1 @@
+PASS: mocked Maps API integration, async HTTPS loader, maps/marker libraries, AdvancedMarkerElement, saved coordinates, coordinate boundaries, map ID, auth failure and network failure. Does not validate Google credentials or real tiles.

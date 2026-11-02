@@ -1,0 +1,292 @@
+{
+  "org.springframework:spring-framework-bom": {
+    "stable": "7.0.10",
+    "source": "https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/maven-metadata.xml",
+    "recent": [
+      "7.0.6",
+      "7.0.7",
+      "7.0.8",
+      "7.0.9",
+      "7.0.10"
+    ]
+  },
+  "org.springframework.security:spring-security-bom": {
+    "stable": "7.1.2",
+    "source": "https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/maven-metadata.xml",
+    "recent": [
+      "7.0.7",
+      "7.0.8",
+      "7.1.0",
+      "7.1.1",
+      "7.1.2"
+    ]
+  },
+  "org.hibernate.orm:hibernate-core": {
+    "stable": "7.4.14.Final",
+    "source": "https://repo.maven.apache.org/maven2/org/hibernate/orm/hibernate-core/maven-metadata.xml",
+    "recent": [
+      "7.4.10.Final",
+      "7.4.11.Final",
+      "7.4.12.Final",
+      "7.4.13.Final",
+      "7.4.14.Final"
+    ]
+  },
+  "org.hibernate.validator:hibernate-validator": {
+    "stable": "9.1.6.Final",
+    "source": "https://repo.maven.apache.org/maven2/org/hibernate/validator/hibernate-validator/maven-metadata.xml",
+    "recent": [
+      "9.1.2.Final",
+      "9.1.3.Final",
+      "9.1.4.Final",
+      "9.1.5.Final",
+      "9.1.6.Final"
+    ]
+  },
+  "tools.jackson.core:jackson-databind": {
+    "stable": "3.2.4",
+    "source": "https://repo.maven.apache.org/maven2/tools/jackson/core/jackson-databind/maven-metadata.xml",
+    "recent": [
+      "3.2.0",
+      "3.2.1",
+      "3.2.2",
+      "3.2.3",
+      "3.2.4"
+    ]
+  },
+  "org.postgresql:postgresql": {
+    "stable": "42.7.14",
+    "source": "https://repo.maven.apache.org/maven2/org/postgresql/postgresql/maven-metadata.xml",
+    "recent": [
+      "42.7.10",
+      "42.7.11",
+      "42.7.12",
+      "42.7.13",
+      "42.7.14"
+    ]
+  },
+  "commons-beanutils:commons-beanutils": {
+    "stable": "1.11.0",
+    "source": "https://repo.maven.apache.org/maven2/commons-beanutils/commons-beanutils/maven-metadata.xml",
+    "recent": [
+      "1.9.3",
+      "1.9.4",
+      "1.10.0",
+      "1.10.1",
+      "1.11.0"
+    ]
+  },
+  "org.apache.commons:commons-beanutils2": {
+    "stable": null,
+    "source": "https://repo.maven.apache.org/maven2/org/apache/commons/commons-beanutils2/maven-metadata.xml",
+    "recent": []
+  },
+  "ch.qos.logback:logback-classic": {
+    "stable": "1.6.6",
+    "source": "https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/maven-metadata.xml",
+    "recent": [
+      "1.6.2",
+      "1.6.3",
+      "1.6.4",
+      "1.6.5",
+      "1.6.6"
+    ]
+  },
+  "org.slf4j:slf4j-api": {
+    "stable": "2.0.20",
+    "source": "https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/maven-metadata.xml",
+    "recent": [
+      "2.0.16",
+      "2.0.17",
+      "2.0.18",
+      "2.0.19",
+      "2.0.20"
+    ]
+  },
+  "jakarta.servlet:jakarta.servlet-api": {
+    "stable": "6.1.0",
+    "source": "https://repo.maven.apache.org/maven2/jakarta/servlet/jakarta.servlet-api/maven-metadata.xml",
+    "recent": [
+      "4.0.3",
+      "4.0.4",
+      "5.0.0",
+      "6.0.0",
+      "6.1.0"
+    ]
+  },
+  "jakarta.servlet.jsp:jakarta.servlet.jsp-api": {
+    "stable": "4.0.0",
+    "source": "https://repo.maven.apache.org/maven2/jakarta/servlet/jsp/jakarta.servlet.jsp-api/maven-metadata.xml",
+    "recent": [
+      "2.3.6",
+      "3.0.0",
+      "3.1.0",
+      "3.1.1",
+      "4.0.0"
+    ]
+  },
+  "jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api": {
+    "stable": "3.0.2",
+    "source": "https://repo.maven.apache.org/maven2/jakarta/servlet/jsp/jstl/jakarta.servlet.jsp.jstl-api/maven-metadata.xml",
+    "recent": [
+      "1.2.7",
+      "2.0.0",
+      "3.0.0",
+      "3.0.1",
+      "3.0.2"
+    ]
+  },
+  "org.glassfish.web:jakarta.servlet.jsp.jstl": {
+    "stable": "3.0.1",
+    "source": "https://repo.maven.apache.org/maven2/org/glassfish/web/jakarta.servlet.jsp.jstl/maven-metadata.xml",
+    "recent": [
+      "1.2.6",
+      "2.0.0",
+      "3.0.0",
+      "3.0.1"
+    ]
+  },
+  "org.junit:junit-bom": {
+    "stable": "6.1.3",
+    "source": "https://repo.maven.apache.org/maven2/org/junit/junit-bom/maven-metadata.xml",
+    "recent": [
+      "6.0.3",
+      "6.1.0",
+      "6.1.1",
+      "6.1.2",
+      "6.1.3"
+    ]
+  },
+  "org.seleniumhq.selenium:selenium-java": {
+    "stable": "4.52.0",
+    "source": "https://repo.maven.apache.org/maven2/org/seleniumhq/selenium/selenium-java/maven-metadata.xml",
+    "recent": [
+      "4.48.0",
+      "4.49.0",
+      "4.50.0",
+      "4.51.0",
+      "4.52.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-compiler-plugin": {
+    "stable": "3.16.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/maven-metadata.xml",
+    "recent": [
+      "3.13.0",
+      "3.14.0",
+      "3.14.1",
+      "3.15.0",
+      "3.16.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-resources-plugin": {
+    "stable": "3.5.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/maven-metadata.xml",
+    "recent": [
+      "3.2.0",
+      "3.3.0",
+      "3.3.1",
+      "3.4.0",
+      "3.5.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-surefire-plugin": {
+    "stable": "3.6.1",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/maven-metadata.xml",
+    "recent": [
+      "3.5.4",
+      "3.5.5",
+      "3.5.6",
+      "3.6.0",
+      "3.6.1"
+    ]
+  },
+  "org.apache.maven.plugins:maven-failsafe-plugin": {
+    "stable": "3.6.1",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-failsafe-plugin/maven-metadata.xml",
+    "recent": [
+      "3.5.4",
+      "3.5.5",
+      "3.5.6",
+      "3.6.0",
+      "3.6.1"
+    ]
+  },
+  "org.apache.maven.plugins:maven-war-plugin": {
+    "stable": "3.5.1",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-war-plugin/maven-metadata.xml",
+    "recent": [
+      "3.3.1",
+      "3.3.2",
+      "3.4.0",
+      "3.5.0",
+      "3.5.1"
+    ]
+  },
+  "org.apache.maven.plugins:maven-clean-plugin": {
+    "stable": "3.5.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/maven-metadata.xml",
+    "recent": [
+      "3.3.1",
+      "3.3.2",
+      "3.4.0",
+      "3.4.1",
+      "3.5.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-dependency-plugin": {
+    "stable": "3.11.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-dependency-plugin/maven-metadata.xml",
+    "recent": [
+      "3.8.0",
+      "3.8.1",
+      "3.9.0",
+      "3.10.0",
+      "3.11.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-enforcer-plugin": {
+    "stable": "3.7.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/maven-metadata.xml",
+    "recent": [
+      "3.6.0",
+      "3.6.1",
+      "3.6.2",
+      "3.6.3",
+      "3.7.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-install-plugin": {
+    "stable": "3.2.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-install-plugin/maven-metadata.xml",
+    "recent": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.2.0"
+    ]
+  },
+  "org.apache.maven.plugins:maven-deploy-plugin": {
+    "stable": "3.2.0",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/maven-metadata.xml",
+    "recent": [
+      "3.1.1",
+      "3.1.2",
+      "3.1.3",
+      "3.1.4",
+      "3.2.0"
+    ]
+  },
+  "org.apache.tomcat:tomcat-catalina": {
+    "stable": "11.0.27",
+    "source": "https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-catalina/maven-metadata.xml",
+    "recent": [
+      "11.0.23",
+      "11.0.24",
+      "11.0.25",
+      "11.0.26",
+      "11.0.27"
+    ]
+  }
+}

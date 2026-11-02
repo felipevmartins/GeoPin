@@ -1,0 +1,16 @@
+Server version: Apache Tomcat/11.0.27
+Server built:   Oct 6 2026 18:12:07 UTC
+Server number:  11.0.27.0
+OS Name:        Linux
+OS Version:     6.18.54.1-microsoft-standard-WSL2
+Architecture:   amd64
+JVM Version:    25.0.5+8-LTS
+JVM Vendor:     Eclipse Adoptium
+APR loaded:     true
+APR Version:    1.7.6
+Tomcat Native:  2.0.16
+OpenSSL (APR):  OpenSSL 3.5.5 27 Jan 2026
+
+Third-party libraries:
+  jakartaee-migration-1.0.13-shaded.jar: 1.0.13
+  ecj-4.41.jar:                          3.46.100.v20260826-1225

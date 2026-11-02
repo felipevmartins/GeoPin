@@ -1,0 +1,43 @@
+app-1  | 02-Nov-2026 04:18:51.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.27
+app-1  | 02-Nov-2026 04:18:51.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Oct 6 2026 18:12:07 UTC
+app-1  | 02-Nov-2026 04:18:51.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.27.0
+app-1  | 02-Nov-2026 04:18:51.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+app-1  | 02-Nov-2026 04:18:51.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            6.18.54.1-microsoft-standard-WSL2
+app-1  | 02-Nov-2026 04:18:51.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+app-1  | 02-Nov-2026 04:18:51.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /opt/java/openjdk
+app-1  | 02-Nov-2026 04:18:51.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           25.0.5+8-LTS
+app-1  | 02-Nov-2026 04:18:51.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Eclipse Adoptium
+app-1  | 02-Nov-2026 04:18:51.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /usr/local/tomcat
+app-1  | 02-Nov-2026 04:18:51.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /usr/local/tomcat
+app-1  | 02-Nov-2026 04:18:51.282 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/usr/local/tomcat/conf/logging.properties
+app-1  | 02-Nov-2026 04:18:51.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+app-1  | 02-Nov-2026 04:18:51.283 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Ddb.url=jdbc:postgresql://db:5432/trixlog
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Ddb.username=trixlog
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Ddb.password=trixlog-test
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Ddb.schema-action=validate
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang.reflect=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.284 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --enable-native-access=ALL-UNNAMED
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/usr/local/tomcat
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/usr/local/tomcat
+app-1  | 02-Nov-2026 04:18:51.285 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/usr/local/tomcat/temp
+app-1  | 02-Nov-2026 04:18:51.288 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.16] using APR version [1.7.6].
+app-1  | 02-Nov-2026 04:18:51.293 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.5 27 Jan 2026]
+app-1  | 02-Nov-2026 04:18:51.489 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+app-1  | 02-Nov-2026 04:18:51.503 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [364] milliseconds
+app-1  | 02-Nov-2026 04:18:51.523 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+app-1  | 02-Nov-2026 04:18:51.523 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.27]
+app-1  | 02-Nov-2026 04:18:51.534 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/usr/local/tomcat/webapps/ROOT.war]
+app-1  | 02-Nov-2026 04:18:52.683 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+app-1  | 02-Nov-2026 04:18:54.829 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [/usr/local/tomcat/webapps/ROOT.war] has finished in [3,295] ms
+app-1  | 02-Nov-2026 04:18:54.831 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+app-1  | 02-Nov-2026 04:18:54.838 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3333] milliseconds
+app-1  | 04:18:56.043 [http-nio-8080-exec-1] WARN  o.s.w.s.config.MvcNamespaceHandler - The XML configuration namespace for Spring MVC is deprecated, please use Java configuration instead.
+app-1  | here
+app-1  | here

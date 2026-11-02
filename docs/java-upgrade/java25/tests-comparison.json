@@ -1,0 +1,13 @@
+{
+  "before": 0,
+  "after": 2,
+  "removed": [],
+  "added": [
+    "br.com.trixlog.web.LocationHttpContractTest#coordinateResponsePreservesNamesUtf8ZeroAndEpochMilliseconds",
+    "br.com.trixlog.web.LocationHttpContractTest#editFormStillOverridesPostToPutAndBindsCoordinates"
+  ],
+  "not_passed_after": [],
+  "preexisting_failures": [],
+  "aliases": [],
+  "ok": true
+}
