@@ -1,6 +1,6 @@
 const { chromium } = require("playwright");
 const assert = require("node:assert/strict");
-const base = "http://127.0.0.1:" + (process.env.TRIXLOG_HTTP_PORT || "18081");
+const base = "http://127.0.0.1:" + (process.env.GEOPIN_HTTP_PORT || process.env.TRIXLOG_HTTP_PORT || "18081");
 
 (async () => {
   const browser = await chromium.launch({ headless: true });

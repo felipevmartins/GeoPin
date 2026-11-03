@@ -1,4 +1,4 @@
-package br.com.trixlog.model;
+package br.com.geopin.model;
 
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;

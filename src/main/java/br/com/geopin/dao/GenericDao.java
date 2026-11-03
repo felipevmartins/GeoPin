@@ -1,11 +1,11 @@
-package br.com.trixlog.dao;
+package br.com.geopin.dao;
 
 import java.util.List;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 
-import br.com.trixlog.model.BaseModel;
+import br.com.geopin.model.BaseModel;
 
 public class GenericDao {
 

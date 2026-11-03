@@ -1,12 +1,12 @@
-package br.com.trixlog.service;
+package br.com.geopin.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.trixlog.dao.GenericDao;
-import br.com.trixlog.model.BaseModel;
+import br.com.geopin.dao.GenericDao;
+import br.com.geopin.model.BaseModel;
 
 public class GenercService {
 	

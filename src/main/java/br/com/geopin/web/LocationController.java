@@ -1,4 +1,4 @@
-package br.com.trixlog.web;
+package br.com.geopin.web;
 
 import java.util.Date;
 
@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import br.com.trixlog.model.Location;
-import br.com.trixlog.service.LocationService;
+import br.com.geopin.model.Location;
+import br.com.geopin.service.LocationService;
 
 @Controller
 @RequestMapping("/location")

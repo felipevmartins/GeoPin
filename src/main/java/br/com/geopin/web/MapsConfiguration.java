@@ -1,4 +1,4 @@
-package br.com.trixlog.web;
+package br.com.geopin.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;

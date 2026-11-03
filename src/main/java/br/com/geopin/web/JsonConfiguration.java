@@ -1,4 +1,4 @@
-package br.com.trixlog.web;
+package br.com.geopin.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

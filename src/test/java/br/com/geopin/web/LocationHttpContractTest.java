@@ -1,4 +1,4 @@
-package br.com.trixlog.web;
+package br.com.geopin.web;
 
 import java.util.Date;
 import org.junit.jupiter.api.BeforeEach;
@@ -8,8 +8,8 @@ import org.springframework.test.util.ReflectionTestUtils;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
-import br.com.trixlog.model.Location;
-import br.com.trixlog.service.LocationService;
+import br.com.geopin.model.Location;
+import br.com.geopin.service.LocationService;
 import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.json.JsonMapper;
 

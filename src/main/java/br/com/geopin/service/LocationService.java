@@ -1,4 +1,4 @@
-package br.com.trixlog.service;
+package br.com.geopin.service;
 
 import java.util.List;
 
@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.trixlog.dao.LocationDao;
-import br.com.trixlog.model.BaseModel;
-import br.com.trixlog.model.Location;
+import br.com.geopin.dao.LocationDao;
+import br.com.geopin.model.BaseModel;
+import br.com.geopin.model.Location;
 
 @Service
 public class LocationService {

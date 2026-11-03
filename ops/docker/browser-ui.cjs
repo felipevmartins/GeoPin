@@ -1,6 +1,6 @@
 const { chromium } = require("playwright");
 const assert = require("node:assert/strict");
-const base = "http://127.0.0.1:" + (process.env.TRIXLOG_HTTP_PORT || "18081");
+const base = "http://127.0.0.1:" + (process.env.GEOPIN_HTTP_PORT || process.env.TRIXLOG_HTTP_PORT || "18081");
 (async () => {
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({
@@ -60,7 +60,7 @@ const base = "http://127.0.0.1:" + (process.env.TRIXLOG_HTTP_PORT || "18081");
     await page.locator(".tag").filter({ hasText: "Café <seguro>" }).waitFor();
     assert.equal(await page.locator(".tag script, .tag img").count(), 0);
     await page.screenshot({
-      path: "/tmp/trixlog-map-desktop.png",
+      path: "/tmp/geopin-map-desktop.png",
       fullPage: true,
     });
     await page.goto(base + "/location/editar");
@@ -93,7 +93,7 @@ const base = "http://127.0.0.1:" + (process.env.TRIXLOG_HTTP_PORT || "18081");
     }
     await page.goto(base + "/location/listar");
     await page.screenshot({
-      path: "/tmp/trixlog-map-mobile.png",
+      path: "/tmp/geopin-map-mobile.png",
       fullPage: true,
     });
     await page.goto(base + "/location/deletar");

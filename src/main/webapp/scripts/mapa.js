@@ -140,7 +140,7 @@
     );
   };
 
-  window.initTrixlogMap = async () => {
+  window.initGeoPinMap = async () => {
     clearTimeout(loadTimer);
     try {
       const [{ Map: GoogleMap, InfoWindow }, { AdvancedMarkerElement }] =
@@ -207,7 +207,7 @@
   source.search = new URLSearchParams({
     key: workspace.dataset.apiKey,
     loading: "async",
-    callback: "initTrixlogMap",
+    callback: "initGeoPinMap",
     v: "quarterly",
     language: "pt-BR",
     region: "BR",

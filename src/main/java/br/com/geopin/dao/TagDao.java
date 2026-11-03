@@ -1,9 +1,9 @@
-package br.com.trixlog.dao;
+package br.com.geopin.dao;
 
 import java.util.List;
 import org.springframework.stereotype.Repository;
-import br.com.trixlog.model.Location;
-import br.com.trixlog.model.Tag;
+import br.com.geopin.model.Location;
+import br.com.geopin.model.Tag;
 
 @Repository
 public class TagDao extends GenericDao {

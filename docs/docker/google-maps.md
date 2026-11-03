@@ -11,7 +11,7 @@ A interface utiliza HTML semântico, JSP UTF-8, CSS responsivo e JavaScript nati
 3. Copie `.env.example` para `.env` na raiz, preencha `GOOGLE_MAPS_API_KEY` e mantenha `GOOGLE_MAPS_MAP_ID=DEMO_MAP_ID` para os testes locais. `.env` é ignorado pelo Git. A chave de navegador é visível no HTML por definição; use as restrições do Google Cloud.
 4. Execute `docker compose up -d --build --wait` e abra http://localhost:18081/location/listar.
 
-Para uso fora dos testes, crie um **map ID do tipo JavaScript** no Google Cloud e substitua DEMO_MAP_ID. As variáveis podem ser fornecidas ao processo Java como `GOOGLE_MAPS_API_KEY`/`GOOGLE_MAPS_MAP_ID`, ou pelas propriedades JVM `maps.api.key`/`maps.map.id` (estas têm prioridade). Para outra porta use TRIXLOG_HTTP_PORT tanto no Compose quanto nos testes e ajuste os referenciadores.
+Para uso fora dos testes, crie um **map ID do tipo JavaScript** no Google Cloud e substitua DEMO_MAP_ID. As variáveis podem ser fornecidas ao processo Java como `GOOGLE_MAPS_API_KEY`/`GOOGLE_MAPS_MAP_ID`, ou pelas propriedades JVM `maps.api.key`/`maps.map.id` (estas têm prioridade). Para outra porta use GEOPIN_HTTP_PORT tanto no Compose quanto nos testes e ajuste os referenciadores.
 
 A aplicação usa carregamento assíncrono HTTPS, canal `quarterly`, `importLibrary('maps')` e `importLibrary('marker')`, e `AdvancedMarkerElement`. O parâmetro sensor e Marker legado foram retirados. Não usa Geocoding/Places: os pontos são posicionados diretamente por latitude/longitude. O clique mostra nome/coordenadas e consulta tags nos endpoints existentes. Se não houver chave, a lista e os detalhes permanecem disponíveis com um link para abrir as coordenadas no Google Maps. Falhas de rede/autorização possuem mensagens próprias.
 
@@ -29,7 +29,7 @@ NODE_PATH=/tmp/trixlog-browser/node_modules node ops/docker/browser-ui.cjs
 NODE_PATH=/tmp/trixlog-browser/node_modules node ops/docker/browser-maps.cjs
 ```
 
-Os testes criam registros únicos no banco Docker e removem seus registros ao terminar. Screenshots desktop/móvel são gravados em /tmp/trixlog-map-desktop.png e /tmp/trixlog-map-mobile.png. O teste simulado não comprova chave, faturamento, map ID de produção ou renderização dos mapas reais. A validação autenticada precisa ser feita com a chave do seu projeto Google Cloud.
+Os testes criam registros únicos no banco Docker e removem seus registros ao terminar. Screenshots desktop/móvel são gravados em /tmp/geopin-map-desktop.png e /tmp/geopin-map-mobile.png. O teste simulado não comprova chave, faturamento, map ID de produção ou renderização dos mapas reais. A validação autenticada precisa ser feita com a chave do seu projeto Google Cloud.
 
 ## Fontes oficiais consultadas
 

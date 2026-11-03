@@ -1,6 +1,7 @@
-package br.com.trixlog.model;
+package br.com.geopin.model;
 
 import java.util.Date;
+import java.util.List;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
@@ -9,36 +10,40 @@ import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.SequenceGenerator;
 import jakarta.persistence.Table;
 
-import  br.com.trixlog.model.Location;
+import  br.com.geopin.model.Tag;
 
 @Entity
-@Table(name = "tags")
-@SequenceGenerator(name="tag_sequence", sequenceName="tag_id_seq", allocationSize=1)
-public class Tag extends BaseModel{
+@Table(name = "locations")
+@SequenceGenerator(name="location_sequence", sequenceName="location_id_seq", allocationSize=1)
+public class Location extends BaseModel{
 
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -4324804574897636231L;
+	private static final long serialVersionUID = -6143507441505404768L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "tag_sequence")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "location_sequence")
 	private int id;
 	
 	@Column(name = "name")
 	private String name;
 	
+	@Column(name = "latitude")
+	private float latitude;
+	
+	@Column(name = "longitude")
+	private float longitude;
+
 	@Column(name = "data_criacao")
 	private Date dataCriacao;
 	
-	@ManyToOne(fetch=FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name="location_id")
-	protected Location location;
+	@OneToMany(fetch=FetchType.LAZY, cascade = CascadeType.ALL, mappedBy="location")
+	private List<Tag> tags;
 
 	public int getId() {
 		return id;
@@ -56,6 +61,22 @@ public class Tag extends BaseModel{
 		this.name = name;
 	}
 
+	public float getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(float latitude) {
+		this.latitude = latitude;
+	}
+
+	public float getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(float longitude) {
+		this.longitude = longitude;
+	}
+
 	public Date getDataCriacao() {
 		return dataCriacao;
 	}
@@ -64,12 +85,12 @@ public class Tag extends BaseModel{
 		this.dataCriacao = dataCriacao;
 	}
 
-	public Location getLocation() {
-		return location;
+	public List<Tag> getTags() {
+		return tags;
 	}
 
-	public void setLocation(Location location) {
-		this.location = location;
+	public void setTags(List<Tag> tags) {
+		this.tags = tags;
 	}
 
 	@Override
@@ -79,9 +100,10 @@ public class Tag extends BaseModel{
 		result = prime * result
 				+ ((dataCriacao == null) ? 0 : dataCriacao.hashCode());
 		result = prime * result + id;
-		result = prime * result
-				+ ((location == null) ? 0 : location.hashCode());
+		result = prime * result + Float.floatToIntBits(latitude);
+		result = prime * result + Float.floatToIntBits(longitude);
 		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((tags == null) ? 0 : tags.hashCode());
 		return result;
 	}
 
@@ -93,7 +115,7 @@ public class Tag extends BaseModel{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Tag other = (Tag) obj;
+		Location other = (Location) obj;
 		if (dataCriacao == null) {
 			if (other.dataCriacao != null)
 				return false;
@@ -101,15 +123,21 @@ public class Tag extends BaseModel{
 			return false;
 		if (id != other.id)
 			return false;
-		if (location == null) {
-			if (other.location != null)
-				return false;
-		} else if (!location.equals(other.location))
+		if (Float.floatToIntBits(latitude) != Float
+				.floatToIntBits(other.latitude))
+			return false;
+		if (Float.floatToIntBits(longitude) != Float
+				.floatToIntBits(other.longitude))
 			return false;
 		if (name == null) {
 			if (other.name != null)
 				return false;
 		} else if (!name.equals(other.name))
+			return false;
+		if (tags == null) {
+			if (other.tags != null)
+				return false;
+		} else if (!tags.equals(other.tags))
 			return false;
 		return true;
 	}

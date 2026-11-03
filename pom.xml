@@ -2,10 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>br.com.trixlog</groupId>
-  <artifactId>trixlog</artifactId>
+  <groupId>br.com.geopin</groupId>
+  <artifactId>geopin</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>
+  <name>GeoPin</name>
+  <description>Cadastro de lugares por coordenadas e visualização no Google Maps.</description>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>

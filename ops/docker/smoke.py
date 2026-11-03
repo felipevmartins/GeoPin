@@ -9,14 +9,14 @@ from urllib.request import Request, urlopen
 import uuid
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = 'http://127.0.0.1:' + os.environ.get('TRIXLOG_HTTP_PORT', '18081')
+BASE = 'http://127.0.0.1:' + (os.environ.get('GEOPIN_HTTP_PORT') or os.environ.get('TRIXLOG_HTTP_PORT', '18081'))
 NAME = 'Teste São Paulo ' + uuid.uuid4().hex
 
 
 def sql(statement):
     return subprocess.check_output(
-        ['docker', 'compose', 'exec', '-T', 'db', 'psql', '-U', 'trixlog',
-         '-d', 'trixlog', '-At', '-v', 'ON_ERROR_STOP=1', '-c', statement],
+        ['docker', 'compose', 'exec', '-T', 'db', 'psql', '-U', 'geopin',
+         '-d', 'geopin', '-At', '-v', 'ON_ERROR_STOP=1', '-c', statement],
         cwd=ROOT, text=True).strip()
 
 

@@ -6,14 +6,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#152b2b">
-  <title>Trixlog · Lugares que importam</title>
+  <title>GeoPin · Lugares que importam</title>
   <link rel="stylesheet" href="<c:url value='/styles/custom.css'><c:param name='v' value='20261102-2'/></c:url>">
   <script defer src="<c:url value='/scripts/custom.js'/>"></script>
 </head>
 <body data-context="<c:out value='${pageContext.request.contextPath}'/>">
 <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 <header class="site-header navbar">
-  <a class="brand" href="<c:url value='/'/>"><span class="brand-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span> trixlog<span class="brand-dot">.</span></a>
+  <a class="brand" href="<c:url value='/'/>"><span class="brand-icon" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span> GeoPin<span class="brand-dot">.</span></a>
   <nav aria-label="Navegação principal">
     <a href="<c:url value='/location/listar'/>">Explorar mapa</a>
     <a href="<c:url value='/location/editar'/>">Editar lugares</a>

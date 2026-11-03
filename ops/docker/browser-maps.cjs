@@ -1,6 +1,6 @@
 const { chromium } = require("playwright");
 const assert = require("node:assert/strict");
-const base = "http://127.0.0.1:" + (process.env.TRIXLOG_HTTP_PORT || "18081");
+const base = "http://127.0.0.1:" + (process.env.GEOPIN_HTTP_PORT || process.env.TRIXLOG_HTTP_PORT || "18081");
 const stub = `
 (() => {
 window.__mapTest={markers:[],libraries:[],options:null,center:null,zoom:null};
@@ -8,7 +8,7 @@ class Map {constructor(el,options){window.__mapTest.options=options;} panTo(p){w
 class InfoWindow {setContent(content){window.__mapTest.info=content.textContent;} open(){}}
 class AdvancedMarkerElement {constructor(options){Object.assign(this,options);window.__mapTest.markers.push(this);} addListener(type,handler){this.handler=handler;}}
 window.google={maps:{importLibrary:async name=>{window.__mapTest.libraries.push(name);return name==='maps'?{Map,InfoWindow}:{AdvancedMarkerElement};},LatLngBounds:class {extend(){} getCenter(){return {lat:0,lng:0}}}}};
-window.initTrixlogMap();
+window.initGeoPinMap();
 })();`;
 (async () => {
   const browser = await chromium.launch({ headless: true });

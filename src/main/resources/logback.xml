@@ -11,6 +11,6 @@
 		<appender-ref ref="STDOUT" />
 	</root>
 	
-	<logger name="br.com.trixlog" level="info" />
+	<logger name="br.com.geopin" level="info" />
 	
 </configuration>

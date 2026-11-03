@@ -8,9 +8,9 @@ Na raiz do projeto:
 docker compose up -d --build --wait --wait-timeout 180
 ```
 
-Abra http://localhost:18081/. Para usar outra porta, prefixe o comando com `TRIXLOG_HTTP_PORT=18082` (use a mesma variável no smoke).
+Abra http://localhost:18081/. Para usar outra porta, prefixe o comando com `GEOPIN_HTTP_PORT=18082` (use a mesma variável no smoke).
 
-Serviços: Tomcat 11 com Temurin 25, com APIs Jakarta EE 11, e PostgreSQL 16. O banco só é acessível na rede Compose, com volume exclusivo `trixlog-test_postgres-test`. A aplicação é publicada apenas em 127.0.0.1. Credenciais fixas são exclusivas deste ambiente local. Hibernate cria/atualiza o esquema neste banco de testes.
+Serviços: Tomcat 11 com Temurin 25, com APIs Jakarta EE 11, e PostgreSQL 16. O banco só é acessível na rede Compose, com volume exclusivo `geopin-test_postgres-test`. A aplicação é publicada apenas em 127.0.0.1. Credenciais fixas são exclusivas deste ambiente local. Hibernate cria/atualiza o esquema neste banco de testes.
 
 Teste de integração (Python 3 no host, sem dependências):
 
@@ -32,7 +32,7 @@ Para apagar **todos os dados de teste** e recriar o banco do zero, execute `dock
 
 A construção executa `mvn clean verify`, incluindo os testes JUnit 6. O smoke testa HTTP e PostgreSQL reais; os scripts `browser-ui.cjs`, `browser-css.cjs` e `browser-maps.cjs` verificam a interface com Playwright (instale Playwright e Chromium no ambiente de execução). O teste de Maps simula a API; a integração com o serviço Google exige uma chave válida.
 
-A migração, versões exatas, fontes, evidências e recuperação estão em [Java 25](../../docs/java-upgrade/java25/README.md). Para testar somente a compatibilidade de um banco já existente, use `TRIXLOG_SCHEMA_ACTION=validate`; o padrão `update` permite inicializar o banco local vazio.
+A migração, versões exatas, fontes, evidências e recuperação estão em [Java 25](../../docs/java-upgrade/java25/README.md). Para testar somente a compatibilidade de um banco já existente, use `GEOPIN_SCHEMA_ACTION=validate`; o padrão `update` permite inicializar o banco local vazio.
 
 ## Interface e Google Maps
 

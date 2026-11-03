@@ -1,4 +1,4 @@
-# Trixlog Spring
+# GeoPin
 
 Aplicação web para cadastrar lugares por latitude e longitude, associar tags e visualizar os pontos no Google Maps. A interface utiliza JSP, CSS responsivo e JavaScript nativo, com busca de lugares e prévia de coordenadas.
 
@@ -27,10 +27,10 @@ docker compose up -d --build --wait
 
 Abra **http://localhost:18081/**. A aplicação e o PostgreSQL têm healthchecks; o banco usa volume persistente e fica acessível apenas na rede do Compose. As credenciais fixas do Compose são destinadas ao ambiente local de teste.
 
-Para outra porta, defina `TRIXLOG_HTTP_PORT` no `.env`. O Hibernate inicializa o banco vazio com `update`; para verificar um esquema existente sem alterá-lo, execute:
+Para outra porta, defina `GEOPIN_HTTP_PORT` no `.env`. O Hibernate inicializa o banco vazio com `update`; para verificar um esquema existente sem alterá-lo, execute:
 
 ```sh
-TRIXLOG_SCHEMA_ACTION=validate docker compose up -d --wait
+GEOPIN_SCHEMA_ACTION=validate docker compose up -d --wait
 ```
 
 Para consultar logs e parar preservando os dados:
@@ -62,7 +62,7 @@ Para compilar fora do Docker, configure `JAVA_HOME` para um JDK 25 e use Maven 3
 mvn clean verify
 ```
 
-O resultado é `target/trixlog-1.0.0.war`. Para executar em outro Tomcat 11, configure a conexão PostgreSQL pelas propriedades JVM `db.url`, `db.username` e `db.password`; `db.schema-action` aceita `validate` para um esquema já inicializado.
+O resultado é `target/geopin-1.0.0.war`. Para executar em outro Tomcat 11, configure a conexão PostgreSQL pelas propriedades JVM `db.url`, `db.username` e `db.password`; `db.schema-action` aceita `validate` para um esquema já inicializado.
 
 Com a stack Docker ativa, execute o teste de integração HTTP e PostgreSQL (Python 3, sem pacotes adicionais):
 
@@ -70,7 +70,7 @@ Com a stack Docker ativa, execute o teste de integração HTTP e PostgreSQL (Pyt
 python3 ops/docker/smoke.py
 ```
 
-O smoke cobre criação, consulta, edição e exclusão de lugares, duas tags por local, UTF-8, JSON, preservação da data de criação e exclusão em cascata. Os registros do teste são removidos ao terminar. Para outra porta, forneça `TRIXLOG_HTTP_PORT` também ao teste.
+O smoke cobre criação, consulta, edição e exclusão de lugares, duas tags por local, UTF-8, JSON, preservação da data de criação e exclusão em cascata. Os registros do teste são removidos ao terminar. Para outra porta, forneça `GEOPIN_HTTP_PORT` também ao teste.
 
 Os scripts `ops/docker/browser-ui.cjs`, `browser-css.cjs` e `browser-maps.cjs` utilizam Playwright/Chromium. A instalação e os comandos estão no [guia da interface](docs/docker/google-maps.md). Os testes de UI pressupõem chave Google vazia; o teste de Maps simula a API.
 
@@ -88,3 +88,11 @@ Consulte [evidências, versões e recuperação](docs/java-upgrade/java25/README
 - `src/test`: testes de contrato HTTP.
 - `ops/docker`: instruções e regressões de integração/navegador.
 - `docs`: decisões e evidências das atualizações.
+
+## Nome do projeto
+
+O repositório passou de `Trixlog-Spring` para [GeoPin](https://github.com/felipevmartins/GeoPin). As coordenadas Maven são `br.com.geopin:geopin` e os pacotes Java usam `br.com.geopin`.
+
+O projeto Compose usa `geopin-test`, o banco/usuário `geopin`, o volume `geopin-test_postgres-test` e a imagem `geopin-app:local`. A nova base é inicializada vazia; os volumes antigos não são reutilizados. As variáveis `GEOPIN_HTTP_PORT` e `GEOPIN_SCHEMA_ACTION` têm prioridade; os nomes antigos com prefixo `TRIXLOG_` continuam aceitos. Relatórios históricos mantêm os nomes e caminhos observados na época.
+
+Detalhes e validação da mudança de nome: [renomeação para GeoPin](docs/geopin.md).
